@@ -13,7 +13,9 @@ function storeForm(){
 
 	let diff = document.querySelector('.difficolta').value;
 	console.log(diff);
-
+	const title = document.querySelector('.play-text');
+	title.classList.add('none');
+	
     if (diff == 'EASY' ){
 
         for (let i = 0; i < 100; i++) {
