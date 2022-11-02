@@ -38,5 +38,5 @@ body {
 }
 
 .cell.active {
-	background-color: gold;
+	background-color: rgb(136, 0, 255);
 }

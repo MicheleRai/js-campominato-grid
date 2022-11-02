@@ -19,5 +19,6 @@ for (let i = 0; i < 100; i++) {
 
 	eleCell.addEventListener('click', function () {
 		this.classList.toggle('active')
+        console.log(i);
 	});
 }
