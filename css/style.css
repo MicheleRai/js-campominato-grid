@@ -7,9 +7,27 @@ body {
 	height: 100vh;
 }
 
+header{
+	height: 10vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+img{
+	height: 100%;
+}
+
+h1{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .container {
 	display: flex;
-	height: 100vh;
+	height: 90vh;
 	background-color: rgb(114, 230, 250);
 }
 
@@ -24,13 +42,25 @@ body {
 
 .cell {
 	border: 2px solid black;
-	height: calc(100% / 10);
-	width: calc(100% / 10);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.ten{
+	height: calc(100% / 10);
+	width: calc(100% / 10);
+}
+
+.nine{
+	height: calc(100% / 9);
+	width: calc(100% / 9);
+}
+
+.seven{
+	height: calc(100% / 7);
+	width: calc(100% / 7);
+}
 .sq {
 	display: flex;
 	justify-content: center;

@@ -9,16 +9,54 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 - con difficoltà 3 => 49 caselle, con un numero compreso tra 1 e 49, divise in 7 caselle per 7 righe;*/
 
 const eleGrid = document.querySelector('.grid');
+function storeForm(){
 
-for (let i = 0; i < 100; i++) {
+	let diff = document.querySelector('.difficolta').value;
+	console.log(diff);
 
-	const eleCell = document.createElement('div');
-	eleCell.classList.add('cell');
-	eleGrid.append(eleCell);
-    eleCell.innerHTML += `<div class="sq">${i}</div>`;
+    if (diff == 'EASY' ){
 
-	eleCell.addEventListener('click', function () {
-		this.classList.toggle('active')
-        console.log(i);
-	});
+        for (let i = 0; i < 100; i++) {
+
+			const eleCell = document.createElement('div');
+			eleCell.classList.add('cell', 'ten');
+			eleGrid.append(eleCell);
+			eleCell.innerHTML += `<div class="sq">${i}</div>`;
+		
+			eleCell.addEventListener('click', function () {
+				this.classList.toggle('active')
+				console.log(i);
+			});
+		}
+
+		}else if (diff == 'NORMAL'){
+
+			for (let i = 0; i < 81; i++) {
+
+				const eleCell = document.createElement('div');
+				eleCell.classList.add('cell', 'nine');
+				eleGrid.append(eleCell);
+				eleCell.innerHTML += `<div class="sq">${i}</div>`;
+
+				eleCell.addEventListener('click', function () {
+					this.classList.toggle('active')
+					console.log(i);
+				});
+			}
+			}else {
+					
+				for (let i = 0; i < 49; i++) {
+
+					const eleCell = document.createElement('div');
+					eleCell.classList.add('cell', 'seven');
+					eleGrid.append(eleCell);
+					eleCell.innerHTML += `<div class="sq">${i}</div>`;
+
+					eleCell.addEventListener('click', function () {
+						this.classList.toggle('active')
+						console.log(i);
+					});
+				}
+			}
+     
 }

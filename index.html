@@ -11,9 +11,20 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
+    <header>
+       <h1> <img src="img/BOOLEAN-icon.png" alt="BOOLEAN-icon"> CAMPO MINATO</h1>
+       <form action="send" onsubmit="event.preventDefault(); return false;">
+            <select class="difficolta" name="difficolta"> 
+                <option>EASY</option>
+                <option>NORMAL</option>
+                <option>HARD</option>
+            </select>
+            <button type="submit" onclick="storeForm();">PLAY</button>
+            <button type="reset">Annulla</button>  
+       </form>
+    </header>
     <div class="container">
 		<div class="grid">
-
 		</div>
 	</div>
 </body>
