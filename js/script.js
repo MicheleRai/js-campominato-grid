@@ -15,6 +15,7 @@ for (let i = 0; i < 100; i++) {
 	const eleCell = document.createElement('div');
 	eleCell.classList.add('cell');
 	eleGrid.append(eleCell);
+    eleCell.innerHTML += `<div class="sq">${i}</div>`;
 
 	eleCell.addEventListener('click', function () {
 		this.classList.toggle('active')
