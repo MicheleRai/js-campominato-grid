@@ -58,6 +58,7 @@ function storeForm(){
 						this.classList.toggle('active')
 						console.log(i);
 					});
+					
 				}
 			}
      
